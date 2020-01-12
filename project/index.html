@@ -16,11 +16,38 @@ category: project
 
 <section>
   <h2>Chirplet Wigner-Ville Distribution for TFR and Its Applications</h2>
-  <img class="mySlides" src="../project/imgs/img1.png">
-  <img class="mySlides" src="../project/imgs/img2.png">
-  <img class="mySlides" src="../project/imgs/img3.png">
-  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+  <h2 class="w3-center">Manual Slideshow</h2>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="../project/imgs/img1.png" style="width:100%">
+    <img class="mySlides" src="../project/imgs/img2.png" style="width:100%">
+    <img class="mySlides" src="../project/imgs/img3.png" style="width:100%">
+    <img class="mySlides" src="../project/imgs/IMG_2100.PNG" style="width:100%">
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
   <h3>Paper Source: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0888327013003853">Publication</a></h3>
   <p><strong>My role:</strong> Main developer</p>
   <p>
