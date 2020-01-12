@@ -5,39 +5,27 @@ category: blog
 ---
 
 <link rel="stylesheet" href="../css/blog.css">
-<div class="subheader-container">
-<div class = "inner">
-<nav class = "sub-nav">
-    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Home</a>
-    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">Categories</a>
-    <!---<a class="{% if page.category == 'donate' %} selected {% endif %}" href="/blog/donate.html">Donate</a>-->
-    <a class="{% if page.category == 'rss' %} selected {% endif %}" href="/blog/feed.xml">RSS</a>
-</nav>
-</div>
-</div>
+
+
 <section class="inner">
   <div class="pidex">
     <blockquote>
-      <p>极致的幸福，存在于孤独的深海。在这样日复一日的生活里，我逐渐和自己达成和解。</p>
+      <p>人生的本质是诗意的，人应该诗意地栖息在大地上。</p>
     </blockquote>
   <div>
-  <ul class="posts">
-    {% for post in site.posts %}
-	  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-	  {% if year != y %}
-		{% assign year = y %}
-		<span class="listing-seperator">{{ y }}</span>
-	  {% endif %}
-    <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}">
-        <span class='date'>{{ post.date | date: "%b %d" }}</span>
-        <span class='article'>{{ post.title }}</span>
-		<div class="tag-in-index-post">
-        <i class="fa fa-tags"></i>
-          <div class="tag">
-		        {{ post.tags | first }}
-          </div>
-        </div>
-    </a>
-    {% endfor %}
-  </ul>
 </section>
+<div class="spacer"></div>
+
+
+<section>
+  <a href="https://www.ucdavis.edu/">
+    <img class="inline pull-right" src="../blog/imgs/ucdavsi.jpg"
+         alt="PCVwithPython Screenshot" width="280">
+  </a>
+  <p><strong>Author:</strong> Gang Chen</p>
+   <p>红叶微风秋意浓，</p>
+   <p>白云高塔诗情悠。</p> 
+   <p>无尽良田原野阔，</p> 
+    <p>万千学子书山游。</p>
+</section>
+<div class="spacer"></div>
