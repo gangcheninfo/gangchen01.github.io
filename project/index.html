@@ -11,8 +11,97 @@ category: project
 <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
 <p class="fancy">
-  <h2>Here are the projects I have done in the past. </h2>
+  <h3>Here are the projects I have done in the past. </h3>
 </p>
+<div class="spacer"></div>
+
+
+<section>
+  <h2>An adaptive non-parametric short-time Fourier transform: Application to echolocation</h2>
+
+  <h2 class="w3-center">Manual Slideshow</h2>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="../project/imgs/stft.png"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/stft1.png"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/stft2.png"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/stft3.png"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/stft4.png"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/stft5.png"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/stft6.png"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/stft7.png"  width="760" height="475">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  <h3>Paper Source: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0003682X14001698">Publication</a></h3>
+  <p><strong>My role:</strong> Main developer</p>
+  <p>
+   This project studies a novel time–frequency representation method—adaptive non-parametric short-time Fourier transform (ANSTFT), together with its application to the echolocation signal analysis. By rotating the signal in the analysis window, the local instantaneous frequency has been reset to parallel to the time axis. Then the high frequency and time resolution have been achieved with the mono-frequency signal simultaneously. To find the optimal rotating angle of the local signal, an iterative approximation algorithm has been utilized, which makes the ANSTFT a non-parametric data driving method and have the better generalization ability than the conventional adaptive STFT. Moreover, several numerical examples are presented to illustrate the aforementioned characteristics and the application of ANSTFT to echolocation signal analysis demonstrates its validity.    <strong>Technologies:</strong> Self-adaptive Circit, Linear Variable Differential Transformer.
+   <strong>Technologies:</strong> Self-adaptive Time-Frequency Representation, Non-parametric Short-Time Fourier Transform.
+  </p>
+</section>
+<div class="spacer"></div>
+
+<section>
+  <h2>An Adaptive Analog Circuit for LVDT’s Nanometer Measurement Without Losing Sensitivity and Range</h2>
+
+  <h2 class="w3-center">Manual Slideshow</h2>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="../project/imgs/lvdt.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/lvdt1.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/lvdt2.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/lvdt3.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/lvdt4.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/lvdt5.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/lvdt6.jpg"  width="760" height="475">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  <h3>Paper Source: <a href="https://ieeexplore.ieee.org/abstract/document/6934964">Publication</a></h3>
+  <p><strong>My role:</strong> Main developer</p>
+  <p>
+    A self-adaptive circuit for the linear variable differential transformer (LVDT) has been developed to enhance its nanometer measurement range without loss resolution. By applying a fuzzy-proportional-integral-derivative controlled programmable gain amplifier array to produce a reference signal, which can adjust itself according to LVDT's core position, the conditioning circuit has ensured the signal to analog-to-digital converter varying in a very small interval over full-scale operating range. Thus, the sensitivity of the measurement system can be improved without losing measurement range. The simulation result demonstrated that the proposed circuit has solved the contradiction between resolution and range, which usually occurs in weak signal detection. Moreover, the signal-to-noise ratio has been ameliorated greatly. Additionally, the DSP-based signal conditioner, which utilizes the self-adaptive circuit, demonstrates the performance of the novel design and nanometer precision is obtained in a wide range.
+    <strong>Technologies:</strong> Self-adaptive Circit, Linear Variable Differential Transformer.
+  </p>
+</section>
+<div class="spacer"></div>
 
 
 <section>
