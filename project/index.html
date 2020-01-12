@@ -11,8 +11,59 @@ category: project
 <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
 <p class="fancy">
-  Here are the projects I have done in the past. 
+  <h2>Here are the projects I have done in the past. </h2>
 </p>
+
+
+<section>
+  <h2>A novel wrapper method for feature selection and its applications</h2>
+
+  <h2 class="w3-center">Manual Slideshow</h2>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="../project/imgs/csm1.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm2.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm3.jpg" width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm4.jpg" width="760" height="475"> 
+    <img class="mySlides" src="../project/imgs/csm5.jpg"  width="760" height="475"> 
+    <img class="mySlides" src="../project/imgs/csm6.jpg"  width="760" height="475"> 
+    <img class="mySlides" src="../project/imgs/csm7.jpg" width="760" height="475"> 
+    <img class="mySlides" src="../project/imgs/csm8.jpg" width="760" height="475">   
+    <img class="mySlides" src="../project/imgs/csm9.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm10.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm11.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm12.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm13.jpg"  width="760" height="475">
+    <img class="mySlides" src="../project/imgs/csm14.jpg"  width="760" height="475">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  <h3>Paper Source: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231215001459">Publication</a></h3>
+  <p><strong>My role:</strong> Main developer</p>
+  <p>
+    This project introduces a wrapper method, namely cosine similarity measure support vector machines (CSMSVM), to eliminate irrelevant or redundant features during classifier construction by introducing the cosine distance into support vector machines (SVM). Traditionally, feature selection approaches typically extract features and learn SVM parameters independently or in the attribute space, which might result in a loss of information related to classification process or lead to the increase of classification error when introduce the kernel SVM. The proposed CSMSVM framework, however, jointly performs feature selection, SVM parameter learning and remove low relevance features by optimizing the shape of an anisotropic RBF kernel in feature space. Moreover, the Bayesian interpretation of the novel methodology reveals its Bayesian character, which builds the proposed method on solid theory foundation, and the iteration algorithm, which is proposed to optimize the feature weight, has achieved to maximize the maximum a posterior (MAP). Comparing the novel method with well-known feature selection techniques with experiments, CSMSVM outperformed the other methodologies in improving the pattern recognition accuracy with fewer features. <p>
+    <strong>Technologies:</strong> Feature Selection, Cosine Similarity, Support Vector Machines.
+  </p>
+</section>
+<div class="spacer"></div>
 
 <section>
   <h2>Chirplet Wigner-Ville Distribution for TFR and Its Applications</h2>
@@ -31,7 +82,6 @@ category: project
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
   </div>
-  
   <script>
   var slideIndex = 1;
   showDivs(slideIndex);
